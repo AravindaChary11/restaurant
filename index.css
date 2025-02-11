@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://unsplash.com/photos/DmO662qvWO8/download?force=true') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styles */
+.container {
+  background: rgba(255, 255, 255, 0.7); /* Slight transparency */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 550px; /* Increased width */
+  height: 650px; /* Increased height */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for contrast */
+}
+
+/* Seats Left Styles */
+.seats {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.seats span {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Form Section Styles */
+.reservation-form {
+  background: rgba(255, 255, 255, 0.8); /* Match transparency of the larger square */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 350px; /* Adjust width to fit nicely */
+  margin: 10px auto; /* Center align */
+}
+
+.reservation-form.expanded {
+  height: auto; /* Dynamically adjusts the height to fit the menu */
+}
+
+.reservation-form input {
+  width: 80%; /* Increased width */
+  height: 45px; /* Increased height */
+  padding: 10px;
+  font-size: 1.1rem; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Book Button Styles */
+button {
+  background-color: red; /* Set red background */
+  color: white; /* Set text color to white for contrast */
+  font-size: 16px; /* Increase font size */
+  padding: 10px 20px; /* Add padding for larger size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for better look */
+}
+
+button:hover {
+  background-color: darkred; /* Slightly darker red on hover */
+}
+
+/* Menu Section Styles */
+.menu-section {
+  margin: 15px 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; /* Adjusted to fit inside the container */
+  max-height: 60%; /* Prevents overflow */
+  overflow-y: auto; /* Enables scrolling for long menus */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.menu-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.menu-card h2,
+.menu-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Larger for readability */
+}
+
+.menu-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem; /* Uniform font size */
+}
+
+.menu-card ul li {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+/* Table Styles */
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reservation-table th,
+.reservation-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.reservation-table th {
+  background-color: #007BFF;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.reservation-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.reservation-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styles */
+.checkout-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
